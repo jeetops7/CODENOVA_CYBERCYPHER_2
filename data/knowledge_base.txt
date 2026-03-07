@@ -1,0 +1,21 @@
+1. All premium shipments with SLA < 48 hours must be prioritized at warehouse checkpoints.
+2. If Denver Hub capacity exceeds 5000 units, inbound shipments from the West Coast must be rerouted to Salt Lake Depot.
+3. FastLine Express has a reliability score of 95%. Prefer them for critical SLA shipments.
+4. Severe Storm events require adding 24 hours to the SLA of all affected shipments and immediate customer notification.
+5. RouteMasters carrier is restricted from handling hazardous materials or fragile goods.
+6. Chicago Transit temperature-controlled storage is limited to 500 palettes; excess must be rerouted to Cleveland X-Dock.
+7. Shipments delayed at origin by more than 12 hours must be upgraded to expedited shipping at no cost to the customer.
+8. Port closures require immediate rerouting of maritime/international shipments to the nearest open port within 200 miles.
+9. A Critical severity IT failure at a checkpoint requires all inbound shipments to hold at origin or previous checkpoint.
+10. Global Logistics offers 10% discount on volume but has higher incidence of vehicle breakdowns (factor in risk assessment).
+11. Customs Holds typically take 48-72 hours to resolve unless expedited paperwork is provided by the shipper.
+12. If a carrier strike occurs, reassign all their pending shipments to alternative carriers within 4 hours maximum.
+13. Atlanta Sort requires 2 hours minimum processing time for all LTL (Less Than Truckload) shipments.
+14. Medical and emergency supplies cannot be held for consolidation and must ship out immediately.
+15. High value shipments (>$50,000) must require signature at every checkpoint and final delivery.
+16. If an SLA is breached by more than 24 hours, an automated apology and 20% refund is initiated automatically.
+17. Speedy Haul drivers are not allowed to operate during Severe Storm warnings in mountainous regions (e.g., Rockies, Cascades).
+18. Warehouse congestion delays greater than 8 hours require activating temporary overflow facilities or bypass routing.
+19. Cross-docking facilities must prioritize perishable goods over durable goods in all queuing logic.
+20. Air freight should be utilized as a last resort if standard ground shipping cannot meet a 48-hour SLA for premium tiers.
+21. Any event labeled 'CRITICAL' severity must trigger an immediate alert to the Regional Operations Manager.

@@ -1,0 +1,89 @@
+[
+    {
+        "event_id": "EVT-8001",
+        "type": "Severe Storm",
+        "affected_shipments": [
+            "SHP-1004",
+            "SHP-1007",
+            "SHP-1015",
+            "SHP-1018"
+        ],
+        "severity": "HIGH",
+        "description": "Blizzard condition in Denver area delaying all outbound and transit routes through Denver Hub."
+    },
+    {
+        "event_id": "EVT-8002",
+        "type": "Warehouse Congestion",
+        "affected_shipments": [
+            "SHP-1003",
+            "SHP-1009",
+            "SHP-1012",
+            "SHP-1022"
+        ],
+        "severity": "MEDIUM",
+        "description": "Dallas Center is experiencing heavy backlog. Processing delayed by 12 hours for all inbound shipments."
+    },
+    {
+        "event_id": "EVT-8003",
+        "type": "Carrier Strike",
+        "affected_shipments": [
+            "SHP-1011",
+            "SHP-1015",
+            "SHP-1019",
+            "SHP-1023",
+            "SHP-1027"
+        ],
+        "severity": "CRITICAL",
+        "description": "RouteMasters drivers on strike. Operations halted in multiple regions; alternate carriers required immediately."
+    },
+    {
+        "event_id": "EVT-8004",
+        "type": "Inventory Shortage",
+        "affected_shipments": [
+            "SHP-1025",
+            "SHP-1010"
+        ],
+        "severity": "MEDIUM",
+        "description": "Missing SKUs in cross-docking facility causing hold on outbound transfer."
+    },
+    {
+        "event_id": "EVT-8005",
+        "type": "Vehicle Breakdown",
+        "affected_shipments": [
+            "SHP-1007"
+        ],
+        "severity": "LOW",
+        "description": "Truck broke down on interstate. Recovery vehicle dispatched, minor delay expected."
+    },
+    {
+        "event_id": "EVT-8006",
+        "type": "Port Closure",
+        "affected_shipments": [
+            "SHP-1011",
+            "SHP-1029"
+        ],
+        "severity": "HIGH",
+        "description": "Port operations temporarily suspended due to high winds. Inbound containers stuck at origin."
+    },
+    {
+        "event_id": "EVT-8007",
+        "type": "Customs Hold",
+        "affected_shipments": [
+            "SHP-1028"
+        ],
+        "severity": "MEDIUM",
+        "description": "Shipment held at border inspection. Awaiting documentation clearance."
+    },
+    {
+        "event_id": "EVT-8008",
+        "type": "IT System Failure",
+        "affected_shipments": [
+            "SHP-1006",
+            "SHP-1016",
+            "SHP-1024",
+            "SHP-1025"
+        ],
+        "severity": "CRITICAL",
+        "description": "Atlanta Sort routing system is down. Manual sorting causing massive delays across southern routes."
+    }
+]

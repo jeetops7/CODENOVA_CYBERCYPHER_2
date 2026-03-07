@@ -1,0 +1,302 @@
+[
+    {
+        "shipment_id": "SHP-1001",
+        "origin": "Los Angeles, CA",
+        "destination": "New York, NY",
+        "current_eta": "2026-03-09T18:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Denver Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1002",
+        "origin": "San Francisco, CA",
+        "destination": "Chicago, IL",
+        "current_eta": "2026-03-09T12:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Salt Lake Depot",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1003",
+        "origin": "Houston, TX",
+        "destination": "Atlanta, GA",
+        "current_eta": "2026-03-08T09:00:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Dallas Center",
+        "status": "DELAYED",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1004",
+        "origin": "Seattle, WA",
+        "destination": "Miami, FL",
+        "current_eta": "2026-03-11T14:30:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Denver Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 120
+    },
+    {
+        "shipment_id": "SHP-1005",
+        "origin": "Boston, MA",
+        "destination": "Austin, TX",
+        "current_eta": "2026-03-10T11:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Chicago Transit",
+        "status": "IN_TRANSIT",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1006",
+        "origin": "Miami, FL",
+        "destination": "New York, NY",
+        "current_eta": "2026-03-08T16:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Atlanta Sort",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1007",
+        "origin": "Los Angeles, CA",
+        "destination": "Boston, MA",
+        "current_eta": "2026-03-12T08:00:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Denver Hub",
+        "status": "DELAYED",
+        "sla_hours": 120
+    },
+    {
+        "shipment_id": "SHP-1008",
+        "origin": "Chicago, IL",
+        "destination": "San Francisco, CA",
+        "current_eta": "2026-03-10T20:00:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Omaha Relay",
+        "status": "IN_TRANSIT",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1009",
+        "origin": "Atlanta, GA",
+        "destination": "Houston, TX",
+        "current_eta": "2026-03-08T22:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Dallas Center",
+        "status": "IN_TRANSIT",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1010",
+        "origin": "New York, NY",
+        "destination": "Seattle, WA",
+        "current_eta": "2026-03-13T10:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Chicago Transit",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 144
+    },
+    {
+        "shipment_id": "SHP-1011",
+        "origin": "Austin, TX",
+        "destination": "Los Angeles, CA",
+        "current_eta": "2026-03-10T15:00:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Phoenix Hub",
+        "status": "DELAYED",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1012",
+        "origin": "Denver, CO",
+        "destination": "Miami, FL",
+        "current_eta": "2026-03-11T09:30:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Dallas Center",
+        "status": "IN_TRANSIT",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1013",
+        "origin": "San Francisco, CA",
+        "destination": "New York, NY",
+        "current_eta": "2026-03-12T18:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Omaha Relay",
+        "status": "IN_TRANSIT",
+        "sla_hours": 120
+    },
+    {
+        "shipment_id": "SHP-1014",
+        "origin": "Boston, MA",
+        "destination": "Chicago, IL",
+        "current_eta": "2026-03-09T08:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Cleveland X-Dock",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1015",
+        "origin": "Dallas, TX",
+        "destination": "Seattle, WA",
+        "current_eta": "2026-03-11T12:00:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Denver Hub",
+        "status": "DELAYED",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1016",
+        "origin": "Miami, FL",
+        "destination": "Austin, TX",
+        "current_eta": "2026-03-09T19:00:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Atlanta Sort",
+        "status": "IN_TRANSIT",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1017",
+        "origin": "Houston, TX",
+        "destination": "San Francisco, CA",
+        "current_eta": "2026-03-11T14:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Phoenix Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1018",
+        "origin": "Los Angeles, CA",
+        "destination": "Chicago, IL",
+        "current_eta": "2026-03-10T09:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Denver Hub",
+        "status": "DELAYED",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1019",
+        "origin": "Seattle, WA",
+        "destination": "Boston, MA",
+        "current_eta": "2026-03-14T16:00:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Chicago Transit",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 144
+    },
+    {
+        "shipment_id": "SHP-1020",
+        "origin": "Chicago, IL",
+        "destination": "Atlanta, GA",
+        "current_eta": "2026-03-09T11:30:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Louisville Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1021",
+        "origin": "New York, NY",
+        "destination": "Miami, FL",
+        "current_eta": "2026-03-09T22:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "DC Connect",
+        "status": "IN_TRANSIT",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1022",
+        "origin": "Austin, TX",
+        "destination": "Denver, CO",
+        "current_eta": "2026-03-08T14:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Dallas Center",
+        "status": "DELAYED",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1023",
+        "origin": "Phoenix, AZ",
+        "destination": "Seattle, WA",
+        "current_eta": "2026-03-10T18:00:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "Salt Lake Depot",
+        "status": "IN_TRANSIT",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1024",
+        "origin": "Miami, FL",
+        "destination": "Los Angeles, CA",
+        "current_eta": "2026-03-13T09:00:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Atlanta Sort",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 120
+    },
+    {
+        "shipment_id": "SHP-1025",
+        "origin": "Boston, MA",
+        "destination": "Houston, TX",
+        "current_eta": "2026-03-11T16:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Atlanta Sort",
+        "status": "DELAYED",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1026",
+        "origin": "San Francisco, CA",
+        "destination": "Dallas, TX",
+        "current_eta": "2026-03-10T12:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Phoenix Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 72
+    },
+    {
+        "shipment_id": "SHP-1027",
+        "origin": "Atlanta, GA",
+        "destination": "New York, NY",
+        "current_eta": "2026-03-09T08:30:00Z",
+        "carrier": "RouteMasters",
+        "warehouse_checkpoint": "DC Connect",
+        "status": "IN_TRANSIT",
+        "sla_hours": 48
+    },
+    {
+        "shipment_id": "SHP-1028",
+        "origin": "Seattle, WA",
+        "destination": "Chicago, IL",
+        "current_eta": "2026-03-11T11:00:00Z",
+        "carrier": "Speedy Haul",
+        "warehouse_checkpoint": "Salt Lake Depot",
+        "status": "DELAYED",
+        "sla_hours": 96
+    },
+    {
+        "shipment_id": "SHP-1029",
+        "origin": "Los Angeles, CA",
+        "destination": "Miami, FL",
+        "current_eta": "2026-03-14T20:00:00Z",
+        "carrier": "FastLine Express",
+        "warehouse_checkpoint": "Phoenix Hub",
+        "status": "IN_TRANSIT",
+        "sla_hours": 144
+    },
+    {
+        "shipment_id": "SHP-1030",
+        "origin": "Denver, CO",
+        "destination": "Boston, MA",
+        "current_eta": "2026-03-12T14:00:00Z",
+        "carrier": "Global Logistics",
+        "warehouse_checkpoint": "Chicago Transit",
+        "status": "AT_CHECKPOINT",
+        "sla_hours": 96
+    }
+]
