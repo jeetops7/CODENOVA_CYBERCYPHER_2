@@ -31,3 +31,30 @@ The Sentinel agent uses a **ReAct** (Reasoning + Acting) loop:
 * Integration with real-world ELD (Electronic Logging Device) APIs.
 * Advanced routing algorithms (e.g., Dijkstra's with real-time weather weighting).
 * Multi-agent coordination (e.g., dedicated agents per region).
+
+
+
+
+
+
+logiflow-sentinel/
+├── .devcontainer/          # Containerized development environment config
+├── data/                   # Knowledge base and state storage
+│   ├── disaster_scenario.json  # Pre-defined simulation events
+│   ├── knowledge_base.txt      # Domain-specific logistics rules
+│   └── shipment_data.json      # Current state of all active shipments
+├── docs/                   # Documentation and design assets
+│   ├── architecture_diagram.md
+│   └── scalability_plan.md
+├── src/                    # Core Agent Logic
+│   ├── agent.py            # Main LogisticsAgent class (The "Brain")
+│   ├── data_fetcher.py     # Live API integration for Weather/News
+│   ├── simulator.py        # Logic for scenario-based demonstrations
+│   └── tools.py            # Executable actions (Reroute, Alert, etc.)
+├── ui/                     # Presentation Layer
+│   ├── components.py       # Reusable Streamlit UI elements
+│   └── dashboard.py        # Main conversational Command Center
+├── .env                    # Environment variables (API Keys) - DO NOT COMMIT
+├── .gitignore              # Files and folders to be ignored by Git
+├── README.md               # Project overview and documentation
+└── requirements.txt        # Python dependencies
