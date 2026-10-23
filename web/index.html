@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sentinel</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="globe"></div>
+<div class="vignette"></div>
+
+<header class="top">
+  <div class="mark"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><b>Sentinel</b><span>by LogiFlow</span></div>
+  <div class="status"><i id="live"></i><span id="tick">Tick 0</span><em id="retrieval"></em></div>
+</header>
+
+<nav class="layers" id="layers" aria-label="Route layers"></nav>
+
+<aside class="stats" id="stats"></aside>
+
+<aside class="sheet" id="sheet">
+  <nav class="seg" id="tabs">
+    <button data-tab="incidents" class="on">Incidents</button>
+    <button data-tab="trace">Agent</button>
+    <button data-tab="policy">Policies</button>
+  </nav>
+  <section id="pane"></section>
+</aside>
+
+<footer class="dock" id="dock">
+  <button class="primary" id="btn-tick">Advance</button>
+  <button id="btn-auto">Auto</button>
+  <span class="sep"></span>
+  <div class="pick">
+    <button id="pick-btn" class="pickbtn" aria-haspopup="listbox"><span id="pick-label">Scenario</span><svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></button>
+    <div class="menu" id="menu" hidden>
+      <div class="msearch"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="msearch" placeholder="Search scenarios…" autocomplete="off"></div>
+      <div class="mlist" id="mlist"></div>
+    </div>
+  </div>
+  <button id="btn-inject">Inject</button>
+  <span class="sep"></span>
+  <nav class="seg small" id="engine"></nav>
+  <span class="sep"></span>
+  <button id="btn-reset" class="ghost">Reset</button>
+</footer>
+
+<div class="attr">Imagery © Esri, Maxar, Earthstar Geographics · day/night in real time · hover a hub to trace its shipments</div>
+<section class="dash" id="dash" hidden>
+  <div class="scrim" id="scrim"></div>
+  <div class="dcard" role="dialog" aria-modal="true" aria-label="Location dashboard">
+    <header class="dhead" id="dhead"></header>
+    <div class="dkpis" id="dkpis"></div>
+    <div class="dscroll">
+      <div id="dinc"></div>
+      <div class="dtools" id="dtools"></div>
+      <div class="dtable" id="dtable"></div>
+    </div>
+  </div>
+</section>
+<div class="tip" id="tip"></div>
+<script src="vendor/globe.gl.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+[
+  {
+    "event_id": "EVT-8001",
+    "query": "Blizzard in Denver delaying all routes through Denver Hub",
+    "expected_rules": [
+      "R4",
+      "R2",
+      "R17"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-8002",
+    "query": "Dallas Center backlog delaying inbound shipments by 12 hours",
+    "expected_rules": [
+      "R18"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-8003",
+    "query": "Carrier drivers on strike, alternate carriers needed",
+    "expected_rules": [
+      "R12",
+      "R3"
+    ],
+    "expected_action": "reassign_carrier"
+  },
+  {
+    "event_id": "EVT-8006",
+    "query": "Port operations suspended due to high winds",
+    "expected_rules": [
+      "R8"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-8007",
+    "query": "Shipment held at border inspection awaiting documentation",
+    "expected_rules": [
+      "R11"
+    ],
+    "expected_action": "prioritize_shipment"
+  },
+  {
+    "event_id": "EVT-8008",
+    "query": "Atlanta Sort routing system is down, critical IT failure at checkpoint",
+    "expected_rules": [
+      "R9",
+      "R21"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-9001",
+    "query": "Typhoon landfall near Shanghai; deep-water terminals suspended for 36 hours",
+    "expected_rules": [
+      "R22"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9003",
+    "query": "Container vessel grounded in the Suez Canal; transit blocked in both directions",
+    "expected_rules": [
+      "R23"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9006",
+    "query": "Dockworkers begin a 48-hour strike; container terminals halted at Hamburg",
+    "expected_rules": [
+      "R26"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9008",
+    "query": "Locomotive drivers strike across Germany, Poland and Italy",
+    "expected_rules": [
+      "R27",
+      "R41"
+    ],
+    "expected_action": "reassign_carrier"
+  },
+  {
+    "event_id": "EVT-9009",
+    "query": "Regional airspace closure grounds all air freight through Dubai",
+    "expected_rules": [
+      "R28"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9012",
+    "query": "Magnitude 7.1 earthquake damages Tokyo Bay terminals; inspections underway",
+    "expected_rules": [
+      "R30"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9013",
+    "query": "Ransomware takes down the terminal operating system at Singapore",
+    "expected_rules": [
+      "R32"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-9014",
+    "query": "Grid outage knocks out cold storage; temperature excursion risk for sensitive cargo",
+    "expected_rules": [
+      "R31"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-9017",
+    "query": "Compliance review freezes consignments linked to a newly sanctioned entity",
+    "expected_rules": [
+      "R33"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-9020",
+    "query": "Wildfire closes the Trans-Canada corridor and rail yards",
+    "expected_rules": [
+      "R38"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9024",
+    "query": "Ocean carrier files for insolvency; its vessels are held at anchor worldwide",
+    "expected_rules": [
+      "R39",
+      "R40"
+    ],
+    "expected_action": "reassign_carrier"
+  },
+  {
+    "event_id": "EVT-9101",
+    "query": "Cyclone landfall expected near Chennai; port operations suspended",
+    "expected_rules": [
+      "R46",
+      "R22"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9103",
+    "query": "Heavy rain floods roads around Kochi; container trucks cannot reach the port",
+    "expected_rules": [
+      "R47",
+      "R30"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9107",
+    "query": "Pharmaceutical consignments held at Delhi air cargo pending clearance paperwork",
+    "expected_rules": [
+      "R48",
+      "R34"
+    ],
+    "expected_action": "prioritize_shipment"
+  },
+  {
+    "event_id": "EVT-9108",
+    "query": "Flooding and a washed-out embankment block the Western DFC rail corridor",
+    "expected_rules": [
+      "R49",
+      "R59"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9109",
+    "query": "Truckers' strike over fuel prices keeps the fleet off the road",
+    "expected_rules": [
+      "R50"
+    ],
+    "expected_action": "reassign_carrier"
+  },
+  {
+    "event_id": "EVT-9110",
+    "query": "Heatwave power cuts disrupt cold storage at the inland container depot",
+    "expected_rules": [
+      "R52",
+      "R31"
+    ],
+    "expected_action": "escalate_to_operator"
+  },
+  {
+    "event_id": "EVT-9111",
+    "query": "Dense fog shuts the Delhi runway; cargo flights cancelled",
+    "expected_rules": [
+      "R51",
+      "R28"
+    ],
+    "expected_action": "reroute_shipment"
+  },
+  {
+    "event_id": "EVT-9113",
+    "query": "Dock workers at Haldia begin a 48-hour strike over wage talks",
+    "expected_rules": [
+      "R58",
+      "R26"
+    ],
+    "expected_action": "reroute_shipment"
+  }
+]
