@@ -46,14 +46,42 @@ Simulator ──disruption──▶ LangGraph:  retrieve ─▶ agent ⇄ tools 
 * **Agent**: a **LangGraph** state graph (`retrieve → agent ⇄ tools`) with LangChain tools that really mutate the simulation, validate inputs, and return errors the agent can recover from. Reasoning engines: Claude (`langchain-anthropic`), Ollama (`langchain-ollama`), or an offline deterministic model so the demo needs no keys.
 * **Evaluation**: `python -m src.evaluate` reports retrieval hit@4 (FAISS 96% on 25 cases) and action accuracy; `pytest` covers guardrails and the graph.
 
-## Setup
+## How to run
+
+**Requirements:** Python 3.10+ (developed on 3.12), a modern browser, and internet access on the first run (to download the small embedding model and to stream satellite tiles). No API key is needed.
+
 ```bash
-python -m venv .venv && source .venv/bin/activate
+# 1. Get the code
+git clone https://github.com/jeetops7/CODENOVA_CYBERCYPHER_2.git
+cd CODENOVA_CYBERCYPHER_2
+
+# 2. Create an environment and install
+python3 -m venv .venv
+source .venv/bin/activate          # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-cp .env.example .env        # optional: add ANTHROPIC_API_KEY to use Claude
-python -m src.server   # http://localhost:8501
+
+# 3. Start the app
+python -m src.server
 ```
-The first run downloads the small embedding model and builds the FAISS index.
+
+Open **http://localhost:8501**. The first start takes a minute: it downloads the embedding model (about 65 MB, once) and builds the FAISS index, which is then cached in `.cache/`.
+
+**Try it:** pick a scenario in the bottom dock and press **Inject**. The globe flies to the incident and the agent's trace appears in the side panel. Click any city or hub for its dashboard.
+
+### Reasoning engines (optional)
+The default **Offline** engine is a deterministic playbook, so the demo works with no keys and no model. To let a real LLM do the reasoning, pick it in the dock's engine switch after setting it up:
+
+* **Claude:** copy `.env.example` to `.env` and set `ANTHROPIC_API_KEY=your-key` (optionally `ANTHROPIC_MODEL`). If a key is present, Claude becomes the default engine. Never commit `.env`; it is gitignored.
+* **Ollama (local, free):** install [Ollama](https://ollama.com), run `ollama pull llama3.1` and keep the Ollama app running, then choose *Ollama* in the dock (or set `LLM_BACKEND=ollama`). Use a model that supports tool calling; change it with `OLLAMA_MODEL`.
+
+If the chosen engine fails (missing key, Ollama not running), the agent falls back to the offline engine and the trace shows `rules (fallback: ...)`.
+
+### Troubleshooting
+* **Port 8501 already in use:** stop the other process, or run `pkill -f src.server`.
+* **Globe looks blurry / grey:** satellite tiles need internet; offline you get a lower-resolution bundled texture.
+* **Slow first start:** the embedding model download. If it fails offline, retrieval falls back to TF-IDF (shown as `local-tfidf` in the top bar).
+* **Roads drawn as straight lines:** new road legs call the public OSRM server and need internet the first time.
+* **Blank page / old UI after an update:** hard-refresh (Cmd+Shift+R).
 
 ## Data
 `scripts/generate_data.py` builds a reproducible dataset (seed 42): **~420 shipments** on ~140 lanes (sea, air, rail, road) across **53 hubs** and 63 cities, and **57 disruption scenarios** (typhoons, Suez and Panama canal issues, port and rail strikes, airspace closures, earthquakes, cyber attacks, cold-chain failures, sanctions holds, carrier insolvency...). Each scenario's affected shipments are the ones that really pass through that hub or use that carrier.
