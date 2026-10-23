@@ -19,3 +19,42 @@
 19. Cross-docking facilities must prioritize perishable goods over durable goods in all queuing logic.
 20. Air freight should be utilized as a last resort if standard ground shipping cannot meet a 48-hour SLA for premium tiers.
 21. Any event labeled 'CRITICAL' severity must trigger an immediate alert to the Regional Operations Manager.
+22. Typhoon, hurricane and cyclone warnings require suspending port operations within 300 miles; affected shipments must be rerouted to the nearest unaffected port hub and customers notified.
+23. Suez Canal blockages require rerouting container vessels around the Cape of Good Hope or via alternative hubs, adding 10-14 days to the SLA of affected shipments.
+24. Panama Canal transit restrictions require shifting non-urgent cargo to alternative port hubs with rail landbridge connections.
+25. Port congestion with berth waiting above 72 hours requires diverting vessels to the nearest alternative port within 300 miles.
+26. Dock and port strikes require immediate diversion of inbound vessels to an alternative port hub and holding unloaded containers in bonded storage.
+27. Rail strikes require shifting affected freight to road or to an alternative rail operator within 24 hours.
+28. Airspace closures require rerouting air freight to the nearest open air hub; pharmaceutical air freight gets the first available flight.
+29. Volcanic ash clouds ground air cargo; time-critical shipments must be moved to alternative hubs with sea or rail connections and expedited customs.
+30. Flooding and earthquake events require immediate inspection of hub integrity; cargo must be redirected to unaffected hubs in the same region.
+31. Cold-chain failure: pharmaceutical, vaccine and perishable cargo must be prioritized at P1 and a human operator notified immediately; cargo above 8C for more than 2 hours is quarantined.
+32. Cyber attacks on terminal operating systems require holding inbound shipments, switching to manual processing and escalating to the security operations center.
+33. Sanctions or trade-compliance holds must never be bypassed automatically; escalate to the compliance officer.
+34. Customs holds on temperature-sensitive or medical cargo must be escalated within 1 hour with expedited paperwork.
+35. Piracy risk advisories require rerouting vessels away from the affected waters and notifying insurers.
+36. Driver shortages require reassigning affected road loads to carriers with confirmed capacity within 6 hours.
+37. Fuel shortages require prioritizing rail and sea modes; road loads over 500 miles must be reassigned to carriers with secured fuel.
+38. Wildfire and smoke closures require rerouting freight around closed corridors and checking driver hours-of-service limits.
+39. Carrier insolvency requires immediate reassignment of all pending shipments to alternative carriers with the same transport mode.
+40. Sea freight may only be assigned to ocean carriers (TransOcean Freight, Pacific Bridge Lines, Global Logistics, SilkRoad Logistics); air freight only to AeroLink Cargo or FastLine Express.
+41. EuroRail Cargo is the preferred alternative for European continental freight when road capacity is constrained.
+42. Semiconductor and electronics shipments above $100,000 require tracked, tamper-evident handling and may not be consolidated during disruptions.
+43. Automotive just-in-time parts have only a 24-hour SLA buffer; delays require upgrade to P1 and expedited air or rail.
+44. Heavy snow and blizzards at Arctic or sub-Arctic hubs require deferring departures until runway clearance; priority cargo moves to the next hub.
+45. The Regional Operations Manager must be notified of any disruption affecting more than 10 shipments at once.
+46. Cyclone warnings on India's east or west coast require suspending port operations within 300 km; affected shipments must be rerouted to the nearest unaffected major port and customers notified.
+47. Monsoon flooding on Indian road corridors requires rerouting freight via alternate highways or rail; vehicles must not enter flooded stretches.
+48. Pharmaceutical consignments held at Indian customs must be escalated within 1 hour and moved to temperature-controlled storage at the port or airport.
+49. Dedicated Freight Corridor (DFC) disruptions require shifting containers to road or to the parallel rail route within 12 hours.
+50. Truckers' strikes in India require reassigning loads to carriers with confirmed driver availability, or to rail; perishable and medical loads go first.
+51. Dense fog closures at northern Indian airports require rerouting air freight to Mumbai, Ahmedabad or Nagpur; pharmaceutical cargo goes first.
+52. Heatwave power outages at ICDs and cold stores require moving temperature-sensitive cargo to backup cold storage and prioritizing it at P1.
+53. E-way bill and GST documentation errors must be escalated to the compliance desk; shipments may not move without a valid e-way bill.
+54. Festival-season peaks (Diwali, Eid) require overflow capacity at Pune, Delhi and Mumbai hubs and an SLA extension of 12 hours.
+55. Export shipments through Nhava Sheva and Mundra with a pending Let Export Order must be escalated to the customs broker.
+56. Monsoon-season (June to September) cargo through west-coast ports requires waterproof packaging and priority loading; delays over 24 hours trigger customer notification.
+57. For Delhi NCR to Mumbai consignments above 10 tonnes, prefer the Western DFC rail route over road when capacity is available.
+58. Port strikes at Indian major ports require diverting vessels to the nearest alternative major port within 500 km, for example Mumbai or Mundra, or Chennai, Kolkata or Visakhapatnam.
+59. Track blockages caused by landslides or flooding require rerouting rail freight to the nearest unaffected rail hub or transferring containers to road.
+60. Indian carriers (Bharat Freightways, IndiaLink Logistics, Coastal Lines India, SkyBridge Air Cargo) are the preferred alternatives for domestic freight within India.

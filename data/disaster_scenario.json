@@ -1,89 +1,1073 @@
 [
-    {
-        "event_id": "EVT-8001",
-        "type": "Severe Storm",
-        "affected_shipments": [
-            "SHP-1004",
-            "SHP-1007",
-            "SHP-1015",
-            "SHP-1018"
-        ],
-        "severity": "HIGH",
-        "description": "Blizzard condition in Denver area delaying all outbound and transit routes through Denver Hub."
-    },
-    {
-        "event_id": "EVT-8002",
-        "type": "Warehouse Congestion",
-        "affected_shipments": [
-            "SHP-1003",
-            "SHP-1009",
-            "SHP-1012",
-            "SHP-1022"
-        ],
-        "severity": "MEDIUM",
-        "description": "Dallas Center is experiencing heavy backlog. Processing delayed by 12 hours for all inbound shipments."
-    },
-    {
-        "event_id": "EVT-8003",
-        "type": "Carrier Strike",
-        "affected_shipments": [
-            "SHP-1011",
-            "SHP-1015",
-            "SHP-1019",
-            "SHP-1023",
-            "SHP-1027"
-        ],
-        "severity": "CRITICAL",
-        "description": "RouteMasters drivers on strike. Operations halted in multiple regions; alternate carriers required immediately."
-    },
-    {
-        "event_id": "EVT-8004",
-        "type": "Inventory Shortage",
-        "affected_shipments": [
-            "SHP-1025",
-            "SHP-1010"
-        ],
-        "severity": "MEDIUM",
-        "description": "Missing SKUs in cross-docking facility causing hold on outbound transfer."
-    },
-    {
-        "event_id": "EVT-8005",
-        "type": "Vehicle Breakdown",
-        "affected_shipments": [
-            "SHP-1007"
-        ],
-        "severity": "LOW",
-        "description": "Truck broke down on interstate. Recovery vehicle dispatched, minor delay expected."
-    },
-    {
-        "event_id": "EVT-8006",
-        "type": "Port Closure",
-        "affected_shipments": [
-            "SHP-1011",
-            "SHP-1029"
-        ],
-        "severity": "HIGH",
-        "description": "Port operations temporarily suspended due to high winds. Inbound containers stuck at origin."
-    },
-    {
-        "event_id": "EVT-8007",
-        "type": "Customs Hold",
-        "affected_shipments": [
-            "SHP-1028"
-        ],
-        "severity": "MEDIUM",
-        "description": "Shipment held at border inspection. Awaiting documentation clearance."
-    },
-    {
-        "event_id": "EVT-8008",
-        "type": "IT System Failure",
-        "affected_shipments": [
-            "SHP-1006",
-            "SHP-1016",
-            "SHP-1024",
-            "SHP-1025"
-        ],
-        "severity": "CRITICAL",
-        "description": "Atlanta Sort routing system is down. Manual sorting causing massive delays across southern routes."
-    }
+  {
+    "event_id": "EVT-8001",
+    "type": "Severe Storm",
+    "affected_shipments": [
+      "SHP-1004",
+      "SHP-1007",
+      "SHP-1015",
+      "SHP-1018"
+    ],
+    "severity": "HIGH",
+    "description": "Blizzard condition in Denver area delaying all outbound and transit routes through Denver Hub.",
+    "region": "Americas",
+    "location": "Denver Hub",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-8002",
+    "type": "Warehouse Congestion",
+    "affected_shipments": [
+      "SHP-1003",
+      "SHP-1009",
+      "SHP-1012",
+      "SHP-1022"
+    ],
+    "severity": "MEDIUM",
+    "description": "Dallas Center is experiencing heavy backlog. Processing delayed by 12 hours for all inbound shipments.",
+    "region": "Americas",
+    "location": "Dallas Center",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-8003",
+    "type": "Carrier Strike",
+    "affected_shipments": [
+      "SHP-1011",
+      "SHP-1015",
+      "SHP-1019",
+      "SHP-1023",
+      "SHP-1027"
+    ],
+    "severity": "CRITICAL",
+    "description": "RouteMasters drivers on strike. Operations halted in multiple regions; alternate carriers required immediately.",
+    "region": "Americas",
+    "carrier": "RouteMasters",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-8004",
+    "type": "Inventory Shortage",
+    "affected_shipments": [
+      "SHP-1025",
+      "SHP-1010"
+    ],
+    "severity": "MEDIUM",
+    "description": "Missing SKUs in cross-docking facility causing hold on outbound transfer.",
+    "region": "Americas",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-8005",
+    "type": "Vehicle Breakdown",
+    "affected_shipments": [
+      "SHP-1007"
+    ],
+    "severity": "LOW",
+    "description": "Truck broke down on interstate. Recovery vehicle dispatched, minor delay expected.",
+    "region": "Americas",
+    "duration_ticks": 5
+  },
+  {
+    "event_id": "EVT-8006",
+    "type": "Port Closure",
+    "affected_shipments": [
+      "SHP-1011",
+      "SHP-1029"
+    ],
+    "severity": "HIGH",
+    "description": "Port operations temporarily suspended due to high winds. Inbound containers stuck at origin.",
+    "region": "Americas",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-8007",
+    "type": "Customs Hold",
+    "affected_shipments": [
+      "SHP-1028"
+    ],
+    "severity": "MEDIUM",
+    "description": "Shipment held at border inspection. Awaiting documentation clearance.",
+    "region": "Americas",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-8008",
+    "type": "IT System Failure",
+    "affected_shipments": [
+      "SHP-1006",
+      "SHP-1016",
+      "SHP-1024",
+      "SHP-1025"
+    ],
+    "severity": "CRITICAL",
+    "description": "Atlanta Sort routing system is down. Manual sorting causing massive delays across southern routes.",
+    "region": "Americas",
+    "location": "Atlanta Sort",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9001",
+    "type": "Typhoon",
+    "affected_shipments": [
+      "SHP-2001",
+      "SHP-2219",
+      "SHP-2312"
+    ],
+    "severity": "HIGH",
+    "description": "Typhoon landfall near Shanghai; Yangshan deep-water terminals suspended for 36 hours.",
+    "location": "Shanghai Yangshan",
+    "region": "Asia-Pacific",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9002",
+    "type": "Typhoon",
+    "affected_shipments": [
+      "SHP-2084",
+      "SHP-2256",
+      "SHP-2294"
+    ],
+    "severity": "HIGH",
+    "description": "Super typhoon tracking toward the Korean peninsula; terminal cranes locked down.",
+    "location": "Busan Terminal",
+    "region": "Asia-Pacific",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9003",
+    "type": "Canal Disruption",
+    "affected_shipments": [
+      "SHP-2066",
+      "SHP-2074",
+      "SHP-2086",
+      "SHP-2136",
+      "SHP-2228",
+      "SHP-2262",
+      "SHP-2270",
+      "SHP-2278",
+      "SHP-2304"
+    ],
+    "severity": "CRITICAL",
+    "description": "Container vessel grounded in the Suez Canal; transit blocked in both directions.",
+    "location": "Suez Canal Hub",
+    "region": "Middle East",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9004",
+    "type": "Canal Disruption",
+    "affected_shipments": [
+      "SHP-2095",
+      "SHP-2137",
+      "SHP-2217",
+      "SHP-2336",
+      "SHP-2353",
+      "SHP-2384"
+    ],
+    "severity": "MEDIUM",
+    "description": "Drought restrictions cut Panama Canal daily transits by 40%.",
+    "location": "Panama Colon Hub",
+    "region": "Americas",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9005",
+    "type": "Port Congestion",
+    "affected_shipments": [
+      "SHP-2043",
+      "SHP-2081",
+      "SHP-2240"
+    ],
+    "severity": "MEDIUM",
+    "description": "Berth waiting times exceed 4 days after record import volumes.",
+    "location": "Rotterdam Gateway",
+    "region": "Europe",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9006",
+    "type": "Port Strike",
+    "affected_shipments": [
+      "SHP-2009",
+      "SHP-2064",
+      "SHP-2149",
+      "SHP-2180",
+      "SHP-2235",
+      "SHP-2372"
+    ],
+    "severity": "HIGH",
+    "description": "Dockworkers begin a 48-hour strike; container terminals halted.",
+    "location": "Hamburg Port",
+    "region": "Europe",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9007",
+    "type": "Port Strike",
+    "affected_shipments": [
+      "SHP-2082",
+      "SHP-2128",
+      "SHP-2145",
+      "SHP-2179",
+      "SHP-2268",
+      "SHP-2303"
+    ],
+    "severity": "HIGH",
+    "description": "Longshore labor action slows all vessel unloading at Long Beach.",
+    "location": "Long Beach Gateway",
+    "region": "Americas",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9008",
+    "type": "Rail Strike",
+    "affected_shipments": [
+      "SHP-2006",
+      "SHP-2057",
+      "SHP-2085",
+      "SHP-2102",
+      "SHP-2160",
+      "SHP-2211",
+      "SHP-2221",
+      "SHP-2222",
+      "SHP-2227",
+      "SHP-2238",
+      "SHP-2245",
+      "SHP-2251"
+    ],
+    "severity": "HIGH",
+    "description": "EuroRail Cargo locomotive drivers strike across Germany, Poland and Italy.",
+    "location": "Frankfurt Air Hub",
+    "region": "Europe",
+    "carrier": "EuroRail Cargo",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9009",
+    "type": "Airspace Closure",
+    "affected_shipments": [
+      "SHP-2033",
+      "SHP-2053",
+      "SHP-2055",
+      "SHP-2205",
+      "SHP-2284",
+      "SHP-2318"
+    ],
+    "severity": "HIGH",
+    "description": "Regional airspace closure grounds all air freight through Dubai.",
+    "location": "Dubai Jebel Ali",
+    "region": "Middle East",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9010",
+    "type": "Volcanic Ash",
+    "affected_shipments": [
+      "SHP-2036",
+      "SHP-2155",
+      "SHP-2234",
+      "SHP-2285",
+      "SHP-2299",
+      "SHP-2386"
+    ],
+    "severity": "MEDIUM",
+    "description": "Ash cloud over the North Atlantic closes UK and Benelux air corridors.",
+    "location": "London Thames Hub",
+    "region": "Europe",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9011",
+    "type": "Flooding",
+    "affected_shipments": [
+      "SHP-2005",
+      "SHP-2015",
+      "SHP-2030",
+      "SHP-2058",
+      "SHP-2087",
+      "SHP-2118",
+      "SHP-2130",
+      "SHP-2169",
+      "SHP-2181",
+      "SHP-2189"
+    ],
+    "severity": "HIGH",
+    "description": "Monsoon flooding inundates road access to Nhava Sheva port.",
+    "location": "Mumbai Nhava Sheva",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9012",
+    "type": "Earthquake",
+    "affected_shipments": [
+      "SHP-2026",
+      "SHP-2062",
+      "SHP-2147"
+    ],
+    "severity": "CRITICAL",
+    "description": "Magnitude 7.1 earthquake damages Tokyo Bay terminals; inspections underway.",
+    "location": "Tokyo Bay Hub",
+    "region": "Asia-Pacific",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9013",
+    "type": "Cyber Attack",
+    "affected_shipments": [
+      "SHP-2024",
+      "SHP-2075",
+      "SHP-2126",
+      "SHP-2258",
+      "SHP-2276",
+      "SHP-2308",
+      "SHP-2334",
+      "SHP-2354",
+      "SHP-2369"
+    ],
+    "severity": "CRITICAL",
+    "description": "Ransomware takes down the terminal operating system at Singapore Strait.",
+    "location": "Singapore Strait Hub",
+    "region": "Asia-Pacific",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9014",
+    "type": "Cold Chain Failure",
+    "affected_shipments": [
+      "SHP-2037",
+      "SHP-2050",
+      "SHP-2054",
+      "SHP-2214",
+      "SHP-2330",
+      "SHP-2351"
+    ],
+    "severity": "HIGH",
+    "description": "Grid outage knocks out cold storage at Apapa; temperature excursion risk for sensitive cargo.",
+    "location": "Lagos Apapa Hub",
+    "region": "Africa",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9015",
+    "type": "Piracy Risk",
+    "affected_shipments": [
+      "SHP-2083",
+      "SHP-2131",
+      "SHP-2167",
+      "SHP-2212",
+      "SHP-2359",
+      "SHP-2370"
+    ],
+    "severity": "MEDIUM",
+    "description": "Piracy advisory issued for the western Indian Ocean; insurers raising war-risk cover.",
+    "location": "Mombasa Gateway",
+    "region": "Africa",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9016",
+    "type": "Customs Hold",
+    "affected_shipments": [
+      "SHP-2140",
+      "SHP-2164",
+      "SHP-2182",
+      "SHP-2366",
+      "SHP-2371",
+      "SHP-2387"
+    ],
+    "severity": "MEDIUM",
+    "description": "Customs inspection backlog at Santos holds containers for documentation review.",
+    "location": "Santos Port Hub",
+    "region": "Americas",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9017",
+    "type": "Sanctions Hold",
+    "affected_shipments": [
+      "SHP-2040",
+      "SHP-2119",
+      "SHP-2123",
+      "SHP-2162",
+      "SHP-2165",
+      "SHP-2244",
+      "SHP-2252",
+      "SHP-2310",
+      "SHP-2356"
+    ],
+    "severity": "HIGH",
+    "description": "Compliance review freezes consignments linked to a newly sanctioned entity.",
+    "location": "Istanbul Gateway",
+    "region": "Europe",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9018",
+    "type": "Driver Shortage",
+    "affected_shipments": [
+      "SHP-1003",
+      "SHP-1008",
+      "SHP-1012",
+      "SHP-1016",
+      "SHP-1020",
+      "SHP-1024",
+      "SHP-1028",
+      "SHP-2044",
+      "SHP-2078",
+      "SHP-2153",
+      "SHP-2154",
+      "SHP-2247"
+    ],
+    "severity": "MEDIUM",
+    "description": "Speedy Haul reports an acute driver shortage across the US South.",
+    "location": "Dallas Center",
+    "region": "Americas",
+    "carrier": "Speedy Haul",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9019",
+    "type": "Fuel Shortage",
+    "affected_shipments": [
+      "SHP-2047",
+      "SHP-2166",
+      "SHP-2210",
+      "SHP-2216",
+      "SHP-2239",
+      "SHP-2323"
+    ],
+    "severity": "MEDIUM",
+    "description": "Diesel shortage limits long-haul road freight out of Cape Town.",
+    "location": "Cape Town Hub",
+    "region": "Africa",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9020",
+    "type": "Wildfire",
+    "affected_shipments": [
+      "SHP-2048",
+      "SHP-2060",
+      "SHP-2065",
+      "SHP-2090",
+      "SHP-2158",
+      "SHP-2229",
+      "SHP-2232",
+      "SHP-2360",
+      "SHP-2389"
+    ],
+    "severity": "HIGH",
+    "description": "Wildfire closes the Trans-Canada corridor and Vancouver rail yards.",
+    "location": "Vancouver Gateway",
+    "region": "Americas",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9021",
+    "type": "Hurricane",
+    "affected_shipments": [
+      "SHP-2069",
+      "SHP-2113",
+      "SHP-2208",
+      "SHP-2261",
+      "SHP-2315",
+      "SHP-2355"
+    ],
+    "severity": "HIGH",
+    "description": "Category 3 hurricane forces closure of Savannah port and coastal highways.",
+    "location": "Savannah Port",
+    "region": "Americas",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9022",
+    "type": "Severe Storm",
+    "affected_shipments": [
+      "SHP-2007",
+      "SHP-2017",
+      "SHP-2072",
+      "SHP-2116",
+      "SHP-2184",
+      "SHP-2195",
+      "SHP-2197",
+      "SHP-2300",
+      "SHP-2305"
+    ],
+    "severity": "LOW",
+    "description": "Heavy snow delays transpacific cargo flights at Anchorage.",
+    "location": "Anchorage Air Hub",
+    "region": "Americas",
+    "duration_ticks": 5
+  },
+  {
+    "event_id": "EVT-9023",
+    "type": "Customs Hold",
+    "affected_shipments": [
+      "SHP-2124",
+      "SHP-2148",
+      "SHP-2173",
+      "SHP-2193",
+      "SHP-2246",
+      "SHP-2333"
+    ],
+    "severity": "LOW",
+    "description": "Biosecurity inspection delays containers at Botany.",
+    "location": "Sydney Botany Hub",
+    "region": "Asia-Pacific",
+    "duration_ticks": 5
+  },
+  {
+    "event_id": "EVT-9024",
+    "type": "Carrier Insolvency",
+    "affected_shipments": [
+      "SHP-2010",
+      "SHP-2030",
+      "SHP-2086",
+      "SHP-2094",
+      "SHP-2096",
+      "SHP-2169",
+      "SHP-2212",
+      "SHP-2217",
+      "SHP-2226",
+      "SHP-2235",
+      "SHP-2240",
+      "SHP-2246",
+      "SHP-2278",
+      "SHP-2328"
+    ],
+    "severity": "CRITICAL",
+    "description": "TransOcean Freight files for insolvency; its vessels are held at anchor worldwide.",
+    "location": "Singapore Strait Hub",
+    "region": "Global",
+    "carrier": "TransOcean Freight",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9025",
+    "type": "IT System Failure",
+    "affected_shipments": [
+      "SHP-2019",
+      "SHP-2021",
+      "SHP-2023",
+      "SHP-2027",
+      "SHP-2042",
+      "SHP-2057",
+      "SHP-2100",
+      "SHP-2121",
+      "SHP-2152",
+      "SHP-2211",
+      "SHP-2227",
+      "SHP-2238"
+    ],
+    "severity": "HIGH",
+    "description": "Cargo handling system outage at Frankfurt; manual sorting only.",
+    "location": "Frankfurt Air Hub",
+    "region": "Europe",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9026",
+    "type": "Warehouse Congestion",
+    "affected_shipments": [
+      "SHP-2052",
+      "SHP-2091",
+      "SHP-2099",
+      "SHP-2266",
+      "SHP-2321",
+      "SHP-2325",
+      "SHP-2332",
+      "SHP-2347",
+      "SHP-2383"
+    ],
+    "severity": "MEDIUM",
+    "description": "Peak-season air cargo backlog delays processing by 10 hours.",
+    "location": "Hong Kong Air Hub",
+    "region": "Asia-Pacific",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9027",
+    "type": "Vehicle Breakdown",
+    "affected_shipments": [
+      "SHP-2010",
+      "SHP-2094"
+    ],
+    "severity": "LOW",
+    "description": "Reefer truck broke down on Highway 200 near Manzanillo; recovery under way.",
+    "location": "Manzanillo Port",
+    "region": "Americas",
+    "duration_ticks": 5
+  },
+  {
+    "event_id": "EVT-9028",
+    "type": "Port Closure",
+    "affected_shipments": [
+      "SHP-2051",
+      "SHP-2206",
+      "SHP-2243",
+      "SHP-2328",
+      "SHP-2338",
+      "SHP-2388"
+    ],
+    "severity": "HIGH",
+    "description": "Terminal closed for 24 hours after a crane collapse at Yantian.",
+    "location": "Shenzhen Yantian",
+    "region": "Asia-Pacific",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9101",
+    "type": "Cyclone",
+    "affected_shipments": [
+      "SHP-2002",
+      "SHP-2041",
+      "SHP-2059",
+      "SHP-2101",
+      "SHP-2107",
+      "SHP-2112",
+      "SHP-2115",
+      "SHP-2122",
+      "SHP-2154",
+      "SHP-2156",
+      "SHP-2178",
+      "SHP-2187"
+    ],
+    "severity": "HIGH",
+    "description": "Cyclone landfall expected near Chennai; port operations suspended and trucks held back.",
+    "location": "Chennai Port Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9102",
+    "type": "Cyclone",
+    "affected_shipments": [
+      "SHP-2097",
+      "SHP-2134",
+      "SHP-2142",
+      "SHP-2174",
+      "SHP-2192",
+      "SHP-2196",
+      "SHP-2280",
+      "SHP-2290"
+    ],
+    "severity": "CRITICAL",
+    "description": "Severe cyclonic storm in the Bay of Bengal closes Haldia and the Hooghly channel.",
+    "location": "Kolkata Haldia Hub",
+    "region": "South Asia",
+    "duration_ticks": 14
+  },
+  {
+    "event_id": "EVT-9103",
+    "type": "Flooding",
+    "affected_shipments": [
+      "SHP-2016",
+      "SHP-2034",
+      "SHP-2077",
+      "SHP-2133",
+      "SHP-2157",
+      "SHP-2185",
+      "SHP-2201",
+      "SHP-2203",
+      "SHP-2209",
+      "SHP-2241",
+      "SHP-2263",
+      "SHP-2320"
+    ],
+    "severity": "HIGH",
+    "description": "Heavy rain floods roads around Kochi; container trucks cannot reach Vallarpadam.",
+    "location": "Kochi Vallarpadam Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9104",
+    "type": "Port Congestion",
+    "affected_shipments": [
+      "SHP-2025",
+      "SHP-2068",
+      "SHP-2092",
+      "SHP-2096",
+      "SHP-2109",
+      "SHP-2132",
+      "SHP-2226",
+      "SHP-2237",
+      "SHP-2255",
+      "SHP-2271",
+      "SHP-2283",
+      "SHP-2306"
+    ],
+    "severity": "MEDIUM",
+    "description": "Vessel queue at Mundra exceeds 3 days after a surge of export bookings.",
+    "location": "Mundra Port Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9105",
+    "type": "Port Congestion",
+    "affected_shipments": [
+      "SHP-2005",
+      "SHP-2015",
+      "SHP-2030",
+      "SHP-2058",
+      "SHP-2087",
+      "SHP-2118",
+      "SHP-2130",
+      "SHP-2169",
+      "SHP-2181",
+      "SHP-2189",
+      "SHP-2191",
+      "SHP-2194"
+    ],
+    "severity": "MEDIUM",
+    "description": "Yard utilisation at Nhava Sheva above 95%; gate-in delays of 20 hours.",
+    "location": "Mumbai Nhava Sheva",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9106",
+    "type": "Customs Hold",
+    "affected_shipments": [
+      "SHP-2002",
+      "SHP-2041",
+      "SHP-2059",
+      "SHP-2101",
+      "SHP-2107",
+      "SHP-2112",
+      "SHP-2115",
+      "SHP-2122",
+      "SHP-2154",
+      "SHP-2156",
+      "SHP-2178",
+      "SHP-2187"
+    ],
+    "severity": "MEDIUM",
+    "description": "Customs examination backlog at Chennai holds export containers for document checks.",
+    "location": "Chennai Port Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9107",
+    "type": "Customs Hold",
+    "affected_shipments": [
+      "SHP-2029",
+      "SHP-2031",
+      "SHP-2039",
+      "SHP-2073",
+      "SHP-2093",
+      "SHP-2098",
+      "SHP-2104",
+      "SHP-2230",
+      "SHP-2287",
+      "SHP-2296",
+      "SHP-2313",
+      "SHP-2364"
+    ],
+    "severity": "HIGH",
+    "description": "Pharmaceutical consignments held at Delhi air cargo pending clearance paperwork.",
+    "location": "Delhi Air Cargo Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9108",
+    "type": "Track Blockage",
+    "affected_shipments": [
+      "SHP-2006",
+      "SHP-2012",
+      "SHP-2038",
+      "SHP-2089",
+      "SHP-2106",
+      "SHP-2120",
+      "SHP-2190",
+      "SHP-2200",
+      "SHP-2222",
+      "SHP-2260",
+      "SHP-2279",
+      "SHP-2316"
+    ],
+    "severity": "HIGH",
+    "description": "Flooding and a washed-out embankment block the Western DFC near Vadodara.",
+    "location": "Ahmedabad Logistics Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9109",
+    "type": "Carrier Strike",
+    "affected_shipments": [
+      "SHP-2016",
+      "SHP-2022",
+      "SHP-2049",
+      "SHP-2087",
+      "SHP-2105",
+      "SHP-2170",
+      "SHP-2171",
+      "SHP-2186",
+      "SHP-2200",
+      "SHP-2274",
+      "SHP-2279",
+      "SHP-2329",
+      "SHP-2333",
+      "SHP-2340"
+    ],
+    "severity": "HIGH",
+    "description": "Truckers' strike over fuel prices keeps the Bharat Freightways fleet off the road.",
+    "location": "Delhi ICD Tughlakabad",
+    "region": "South Asia",
+    "carrier": "Bharat Freightways",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9110",
+    "type": "Cold Chain Failure",
+    "affected_shipments": [
+      "SHP-2014",
+      "SHP-2032",
+      "SHP-2105",
+      "SHP-2127",
+      "SHP-2153",
+      "SHP-2170",
+      "SHP-2177",
+      "SHP-2186",
+      "SHP-2188",
+      "SHP-2202",
+      "SHP-2204",
+      "SHP-2213"
+    ],
+    "severity": "HIGH",
+    "description": "Heatwave power cuts disrupt cold storage at the Tughlakabad ICD.",
+    "location": "Delhi ICD Tughlakabad",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9111",
+    "type": "Airspace Closure",
+    "affected_shipments": [
+      "SHP-2029",
+      "SHP-2031",
+      "SHP-2039",
+      "SHP-2073",
+      "SHP-2093",
+      "SHP-2098",
+      "SHP-2104",
+      "SHP-2230",
+      "SHP-2287",
+      "SHP-2296",
+      "SHP-2313",
+      "SHP-2364"
+    ],
+    "severity": "MEDIUM",
+    "description": "Dense fog shuts the Delhi runway for 14 hours; cargo flights cancelled.",
+    "location": "Delhi Air Cargo Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9112",
+    "type": "IT System Failure",
+    "affected_shipments": [
+      "SHP-2003",
+      "SHP-2080",
+      "SHP-2138",
+      "SHP-2144",
+      "SHP-2161",
+      "SHP-2183",
+      "SHP-2225",
+      "SHP-2281"
+    ],
+    "severity": "HIGH",
+    "description": "Cargo community system outage at Bengaluru; manual manifesting only.",
+    "location": "Bengaluru Air Cargo Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9113",
+    "type": "Port Strike",
+    "affected_shipments": [
+      "SHP-2097",
+      "SHP-2134",
+      "SHP-2142",
+      "SHP-2174",
+      "SHP-2192",
+      "SHP-2196",
+      "SHP-2280",
+      "SHP-2290"
+    ],
+    "severity": "HIGH",
+    "description": "Dock workers at Haldia begin a 48-hour strike over wage talks.",
+    "location": "Kolkata Haldia Hub",
+    "region": "South Asia",
+    "duration_ticks": 11
+  },
+  {
+    "event_id": "EVT-9114",
+    "type": "Driver Shortage",
+    "affected_shipments": [
+      "SHP-2014",
+      "SHP-2015",
+      "SHP-2020",
+      "SHP-2028",
+      "SHP-2032",
+      "SHP-2038",
+      "SHP-2045",
+      "SHP-2067",
+      "SHP-2070",
+      "SHP-2077",
+      "SHP-2079",
+      "SHP-2089"
+    ],
+    "severity": "MEDIUM",
+    "description": "IndiaLink Logistics reports a driver shortage during the harvest season in Punjab.",
+    "location": "Ludhiana Dry Port",
+    "region": "South Asia",
+    "carrier": "IndiaLink Logistics",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9115",
+    "type": "Severe Storm",
+    "affected_shipments": [
+      "SHP-2020",
+      "SHP-2078",
+      "SHP-2151",
+      "SHP-2361"
+    ],
+    "severity": "MEDIUM",
+    "description": "Heavy monsoon rain and landslides cut NH27 into the North East.",
+    "location": "Guwahati Gateway Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9116",
+    "type": "Warehouse Congestion",
+    "affected_shipments": [
+      "SHP-2079",
+      "SHP-2125",
+      "SHP-2172",
+      "SHP-2175",
+      "SHP-2215",
+      "SHP-2309",
+      "SHP-2329",
+      "SHP-2346"
+    ],
+    "severity": "MEDIUM",
+    "description": "Festival-season peak overloads the Pune hub; processing delayed by 14 hours.",
+    "location": "Pune Logistics Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9117",
+    "type": "Fuel Shortage",
+    "affected_shipments": [
+      "SHP-2004",
+      "SHP-2028",
+      "SHP-2056",
+      "SHP-2067",
+      "SHP-2088",
+      "SHP-2108",
+      "SHP-2114",
+      "SHP-2160",
+      "SHP-2171",
+      "SHP-2221",
+      "SHP-2245",
+      "SHP-2249"
+    ],
+    "severity": "MEDIUM",
+    "description": "Diesel supply disruption across central India limits long-haul trucking from Nagpur.",
+    "location": "Nagpur Multimodal Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9118",
+    "type": "Piracy Risk",
+    "affected_shipments": [
+      "SHP-2025",
+      "SHP-2068",
+      "SHP-2092",
+      "SHP-2096",
+      "SHP-2109",
+      "SHP-2132",
+      "SHP-2226",
+      "SHP-2237",
+      "SHP-2255",
+      "SHP-2271",
+      "SHP-2283",
+      "SHP-2306"
+    ],
+    "severity": "MEDIUM",
+    "description": "Navy advisory for the northern Arabian Sea raises war-risk premiums for vessels from Mundra.",
+    "location": "Mundra Port Hub",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9119",
+    "type": "Flooding",
+    "affected_shipments": [
+      "SHP-2070",
+      "SHP-2085",
+      "SHP-2117",
+      "SHP-2135",
+      "SHP-2143",
+      "SHP-2163",
+      "SHP-2198",
+      "SHP-2207",
+      "SHP-2317",
+      "SHP-2340",
+      "SHP-2363",
+      "SHP-2365"
+    ],
+    "severity": "MEDIUM",
+    "description": "Flash flooding closes the Delhi-Jaipur expressway for 18 hours.",
+    "location": "Jaipur Dry Port",
+    "region": "South Asia",
+    "duration_ticks": 8
+  },
+  {
+    "event_id": "EVT-9120",
+    "type": "Vehicle Breakdown",
+    "affected_shipments": [
+      "SHP-2079",
+      "SHP-2125"
+    ],
+    "severity": "LOW",
+    "description": "Reefer truck breakdown on the Mumbai-Pune Expressway; recovery vehicle dispatched.",
+    "location": "Pune Logistics Hub",
+    "region": "South Asia",
+    "duration_ticks": 5
+  },
+  {
+    "event_id": "EVT-9121",
+    "type": "Cyber Attack",
+    "affected_shipments": [
+      "SHP-2005",
+      "SHP-2015",
+      "SHP-2030",
+      "SHP-2058",
+      "SHP-2087",
+      "SHP-2118",
+      "SHP-2130",
+      "SHP-2169",
+      "SHP-2181",
+      "SHP-2189",
+      "SHP-2191",
+      "SHP-2194"
+    ],
+    "severity": "HIGH",
+    "description": "Ransomware disrupts the terminal operating system at Nhava Sheva.",
+    "location": "Mumbai Nhava Sheva",
+    "region": "South Asia",
+    "duration_ticks": 11
+  }
 ]

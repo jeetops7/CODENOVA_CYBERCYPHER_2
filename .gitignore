@@ -9,7 +9,5 @@ __pycache__/
 env/
 venv/
 ENV/
-
-# Data files
-data/*.json
-data/*.txt
+.pytest_cache/
+.cache/

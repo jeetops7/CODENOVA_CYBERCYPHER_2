@@ -1,7 +1,12 @@
-streamlit
-pandas
-numpy
-ollama
+fastapi
+uvicorn
+python-dotenv
+langgraph
+langchain
+langchain-community
+langchain-anthropic
 langchain-ollama
 faiss-cpu
-python-dotenv
+fastembed
+pytest
+httpx
